@@ -1,23 +1,98 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<title>Jie Li</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="images/UMN_logo.png"/>
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
 
-<div class="home">
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-  <h1 class="page-heading">Posts</h1>
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-col s3 m3 l3">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="images/portrait.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Jie Li</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-male fa-fw w3-margin-right w3-large w3-text-teal"></i>Jie Li</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>PhD Student, Computer Science</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Minneapolis, US</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>lixx4611@umn.edu</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>612-443-8076</p>
+          <hr>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<!-- 
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Courses Taken</p> -->
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+        </div>
+      </div><br>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- End Left Column -->
+    </div>
 
+    <!-- Right Column -->
+    <div class="w3-col s9 m9 l9">
+    
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+      <h2 class="w3-text-grey w3-padding-16"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About Me</h2>
+      	<div class="w3-container">
+      		<p>I'm a second year PhD student in the <a href="https://www.cs.umn.edu">Department of Computer Science and Engineering</a> at the <a href="http://twin-cities.umn.edu">University of Minnesota, Twin Cities</a>, advised by Prof. <a href="http://rahul.narain.name">Rahul Narain</a>. My research interest focuses on physics based animation. I'm currently working on cloth mesh adaptive remeshing and <a href="https://hal.inria.fr/hal-01180756">contact friction solver</a>, which is a project we collaborate with <a href="http://gdaviet.fr">Gilles</a> and <a href="http://www.inrialpes.fr/bipop/people/bertails/">Florence</a> at INRIA. Previously, I worked 3 years as an Android Engineer at Sina Weibo. </p>
+      	</div>
+      </div>
+
+      <div class="w3-container w3-card-2 w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Cloth Simulation with Implicit Contact and Friction Solver</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>7/2016 - now</h6>
+          <p>A project we collaborate with Gilles and Florence at INRIA. They have the nice nodal impact solver which implicitly handles contact and exact Coulomb friction very well. My work is merging close impacts and inserting nodes at the collision point so that their solver can be well integrated. A remeshing process was applied so that the triangulation of the mesh is well-conditioned, avoiding bad convergence of the solver. Also, I improved their solver to handle constraints on faces and edges (rather than just nodes). This improvement might boost the performance, which is under investigation.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Ray Tracer</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>9/2016 - 11/2016</h6>
+          <p>A ray tracer renders with Phong model, which handles shadows,  textures, refractions and reflections.</p>
+          <img src="images/mirror.png" class="w3-border w3-padding" alt="Raytracer" width="350" height="350">
+          <img src="images/checker.scene.png" class="w3-border w3-padding" alt="Raytracer" width="350" height="350">
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>R-Simp LOD Algorithm.</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>4/2016-5/2016</h6>
+          <p>Reverse Simplification is an LOD algorithm that simplifies model from coarseness to refinement.</p><br>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/XZAgTsSGHq4" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
 </div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
+
