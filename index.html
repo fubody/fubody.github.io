@@ -10,89 +10,88 @@
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
+
 <body class="w3-light-grey">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-col s3 m3 l3">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="images/portrait.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Jie Li</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-male fa-fw w3-margin-right w3-large w3-text-teal"></i>Jie Li</p>
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>PhD Student, Computer Science</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Minneapolis, US</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>lixx4611@umn.edu</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>612-443-8076</p>
-          <hr>
-
-<!-- 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Courses Taken</p> -->
-
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-col s9 m9 l9">
-    
-      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-      <h2 class="w3-text-grey w3-padding-16"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About Me</h2>
-      	<div class="w3-container">
-      		<p>I'm a second year PhD student in the <a href="https://www.cs.umn.edu">Department of Computer Science and Engineering</a> at the <a href="http://twin-cities.umn.edu">University of Minnesota, Twin Cities</a>, advised by Prof. <a href="http://rahul.narain.name">Rahul Narain</a>. My research interest focuses on physics based animation. I'm currently working on cloth mesh adaptive remeshing and <a href="https://hal.inria.fr/hal-01180756">contact friction solver</a>, which is a project we collaborate with <a href="http://gdaviet.fr">Gilles</a> and <a href="http://www.inrialpes.fr/bipop/people/bertails/">Florence</a> at INRIA. Previously, I worked 3 years as an Android Engineer at Sina Weibo. </p>
-      	</div>
-      </div>
-
-      <div class="w3-container w3-card-2 w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Cloth Simulation with Implicit Contact and Friction Solver</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>7/2016 - now</h6>
-          <p>A project we collaborate with Gilles and Florence at INRIA. They have the nice nodal impact solver which implicitly handles contact and exact Coulomb friction very well. My work is merging close impacts and inserting nodes at the collision point so that their solver can be well integrated. A remeshing process was applied so that the triangulation of the mesh is well-conditioned, avoiding bad convergence of the solver. Also, I improved their solver to handle constraints on faces and edges (rather than just nodes). This improvement might boost the performance, which is under investigation.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Ray Tracer (Course Project: CSci 5607)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>9/2016 - 11/2016</h6>
-          <p>A ray tracer renders with Phong model, which handles shadows,  textures, refractions and reflections.</p>
-          <img src="images/mirror.png" class="w3-border w3-padding" alt="Raytracer" width="350" height="350">
-          <img src="images/checker.scene.png" class="w3-border w3-padding" alt="Raytracer" width="350" height="350">
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>R-Simp LOD Algorithm. (Final Project: CSci 5608)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>4/2016-5/2016</h6>
-          <p>Reverse Simplification is an LOD algorithm that simplifies model from coarseness to refinement.</p><br>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/XZAgTsSGHq4" frameborder="0" allowfullscreen></iframe>
+    <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+      <div class="w3-container w3-cell">
+        <div class="w3-display-container w3-margin">
+          <img src="images/portrait.jpg" width="150" alt="Jie Li's portrait">
         </div>
       </div>
-
-    <!-- End Right Column -->
+      <div class="w3-container w3-cell">
+        <p><h1>Jie Li</h1></p>
+        PhD student, Computer Science <br/>
+        University of Minnesota, Twin Cities <br/>
+        <strong>Email:</strong> lixx4611 at umn.edu <br/>
+        <!-- <strong>Tel:</strong> 612-443-8076 -->
+      </div>
+      <div class="w3-container">
+        <p>I'm a thrid year PhD student in the <a href="https://www.cs.umn.edu">Department of Computer Science and Engineering</a> at the <a href="http://twin-cities.umn.edu">University of Minnesota, Twin Cities</a>, advised by Prof. <a href="http://rahul.narain.name">Rahul Narain</a>. My research interest focuses on physics based animation and computational optimization. I'm currently working on the cloth simulation with an implicit contact friction solver, which is a project we collaborate with <a href="http://gdaviet.fr">Gilles</a> and <a href="http://www.inrialpes.fr/bipop/people/bertails/">Florence</a> at INRIA. Previously, I worked 3 years as an Android Engineer at Sina Weibo. </p>
+      </div>
     </div>
-    
-  <!-- End Grid -->
+
+    <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+      <h2 class="w3-text-grey w3-padding-16"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Publications</h2>
+      <div class="w3-container">
+        <div class="w3-container w3-cell"><img src="images/admm-tvcg.png"></div>
+        <div class="w3-container w3-cell">
+          <a href="http://www-users.cs.umn.edu/~over0219/">Matthew Overby</a>, <a href="http://www-users.cs.umn.edu/~brow2327/">George E. Brown</a>, Jie Li, and <a href="http://rahul.narain.name/">Rahul Narain</a>.<br> "<a href="http://www-users.cs.umn.edu/~over0219/pages/admmpd_abstract.html">ADMM ⊇ Projective Dynamics: Fast Simulation of Hyperelastic Models with Dynamic Constraints</a>".<br> <i>IEEE Transactions on Visualization and Computer Graphics</i>, 2017.
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-container w3-card-2 w3-white">
+      <h2 class="w3-text-grey w3-padding-16"><i class="fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Cloth Simulation with Implicit Contact and Friction Solver</b></h5>
+        <!-- <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>7/2016 - now</h6> -->
+        <p> We applied a fast and accurate contact and friction solver to a cloth simulator so as to capture the realistic friction related behaviors. Unlike traditional method that compute the friction force after the dynamics is updated, we compute the friction simultaneously with the dynamics following the exact Coulomb's law. This work is now at the final stage and we are aiming to submit it to SIGGRAPH 2018.</p> <br/>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1hNtfp9sZ9I" frameborder="0" gesture="media" allowfullscreen></iframe>
+        <hr>
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Grid Based Fluid (Course Project of <i>Physics Based Animation</i>)</b></h5>
+        <p>A basic 2D grid based fluid simulator.</p>
+        <img src="images/fluid.gif" class="w3-border w3-padding" alt="Raytracer" width="350" height="350">
+        <img src="images/smoke.gif" class="w3-border w3-padding" alt="Raytracer" width="350" height="350">
+        <hr>
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Deformable Object Simulation with FEM (Course Project of <i>Physics Based Animation</i>)</b></h5>
+        <!-- <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>9/2016 - 11/2016</h6> -->
+        <p>A basic 2D Deformable Object simulator using finite element method (FEM).</p>
+        <hr>
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Two Way Constraint (Course Project of <i>Nonlinear Optimization</i>)</b></h5>
+        <!-- <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>9/2016 - 11/2016</h6> -->
+        <p>Added a two way coupling constraint to the ADMM project and solves it with the Lagrangian multipliers method.</p>
+        <img src="images/cube_cloth_one_way.png" class="w3-border w3-padding" alt="Raytracer" width="350" height="350">
+        <img src="images/cube_cloth_two_way.png" class="w3-border w3-padding" alt="Raytracer" width="350" height="350">
+        <hr>
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Ray Tracer (Course Project of <i>Graphics I</i>)</b></h5>
+        <!-- <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>9/2016 - 11/2016</h6> -->
+        <p>A ray tracer renders with Phong model, which handles shadows,  textures, refractions and reflections.</p>
+        <img src="images/mirror.png" class="w3-border w3-padding" alt="Raytracer" width="350" height="350">
+        <img src="images/checker.scene.png" class="w3-border w3-padding" alt="Raytracer" width="350" height="350">
+        <hr>
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>R-Simp LOD Algorithm. (Final Project of <i>Graphics II</i>)</b></h5>
+        <!-- <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>4/2016-5/2016</h6> -->
+        <p>Reverse Simplification is an LOD algorithm that simplifies model from coarseness to refinement.</p><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XZAgTsSGHq4" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
   </div>
-  
-  <!-- End Page Container -->
-</div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+  
 
 </body>
-</html>
 
+</html>
